@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/dialog_pv">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/dialog_cv">
+			
+		<LinearLayout 
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/memo_bg"
+			android:alpha="0.97"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:gravity="center"
+				android:layout_weight="3">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/dialog_text"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="20dp"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:text="@string/tv_cleardialog_msg"
+					android:textColor="#7B82FE"
+					android:textSize="17dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="2"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_margin="6dp"
+					android:background="@drawable/toggle_bg_off"
+					android:id="@+id/cancel"
+					android:textSize="12dp"
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:text="@string/tv_cleardialog_btn_cancel"/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_margin="6dp"
+					android:background="@drawable/toggle_bg_on"
+					android:id="@+id/clear"
+					android:textSize="12dp"
+					android:textColor="#FFFFFF"
+					android:textStyle="bold"
+					android:text="@string/tv_cleardialog_btn_clear"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</FrameLayout>

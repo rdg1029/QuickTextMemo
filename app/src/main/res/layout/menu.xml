@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/menu_pv">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:alpha="0.97"
+		android:id="@+id/menu_cv">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent" 
+			android:layout_weight="1"/>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:gravity="center"
+			android:layout_weight="4"
+			android:orientation="vertical">
+
+			<LinearLayout 
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:weightSum="3"
+				android:orientation="vertical">
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/menu_clear"
+					android:background="@drawable/btn_menu_top"
+					android:textColor="#7B82FE"
+					android:textAllCaps="false"
+					android:text="@string/tv_menu_clear" />
+				
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/menu_share"
+					android:background="#FFFFFF"
+					android:textColor="#7B82FE"
+					android:textAllCaps="false"
+					android:text="@string/tv_menu_share" />
+				
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/menu_launchapp"
+					android:background="#FFFFFF"
+					android:textColor="#7B82FE"
+					android:textAllCaps="false"
+					android:text="@string/tv_menu_launchapp" />
+				
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:id="@+id/menu_close"
+					android:background="@drawable/btn_menu_bottom"
+					android:textColor="#7B82FE"
+					android:textAllCaps="false"
+					android:text="@string/tv_menu_closemenu" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent" 
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:alpha="0.96"
+	android:id="@+id/memo_pv">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>
+
+		<LinearLayout 
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="3"
+			android:id="@+id/memo_cv"
+			android:background="@drawable/memo_bg"
+			android:focusable="true"
+			android:focusableInTouchMode="true"
+			android:orientation="vertical">
+
+			<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<EditText
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginTop="10dp"
+						android:layout_marginLeft="3dp"
+						android:layout_marginRight="3dp"
+						android:hint="@string/tv_memo_edittext_hint"
+						android:textColorHint="#A8A8A8"
+						android:textColor="#6D6D6D"
+						android:background="@null"
+						android:id="@+id/memo"/>
+
+				</LinearLayout>
+
+			</ScrollView>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="0"
+				android:gravity="center"
+				android:orientation="horizontal">
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="3"
+					android:layout_marginTop="5dp"
+					android:layout_marginBottom="5dp"
+					android:layout_marginLeft="4dp"
+					android:layout_marginRight="2dp"
+					android:id="@+id/memo_close"
+					android:text="@string/tv_memo_btn_save"
+					android:background="#00FFFFFF"
+					android:textAllCaps="false"
+					android:textColor="#7B82FE"
+					android:textStyle="bold"/>
+				
+				<FrameLayout
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1">
+						
+					<Button
+						android:layout_width="48dp"
+						android:layout_height="48dp"
+						android:layout_marginTop="5dp"
+						android:layout_marginBottom="5dp"
+						android:layout_marginLeft="2dp"
+						android:layout_marginRight="4dp"
+						android:id="@+id/memo_menu"
+						android:text="≡"
+						android:background="@drawable/btn_memo_menu"
+						android:textColor="#FFFFFF"
+						android:textStyle="bold"/>
+					
+				</FrameLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+</FrameLayout>

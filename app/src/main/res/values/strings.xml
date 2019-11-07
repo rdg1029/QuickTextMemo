@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuickTextMemo</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="tv_first_check">If you do not allow permissions, you will not be able to use the features of this app!</string>
+    <string name="tv_first_check_confirm">Confirm</string>
+    <string name="tv_first_check_exit">Exit</string>
+    <string name="tv_first_check_restart">Please restart the app after allow permission</string>
+
+    <string name="tv_main_on">QuickMemo is running</string>
+    <string name="tv_main_off">QuickMemo is stopped</string>
+    <string name="tv_main_exit">Are you sure you want to exit?</string>
+    <string name="tv_main_exit_y">Save&amp;Exit</string>
+    <string name="tv_main_exit_n">cancel</string>
+
+    <string name="tv_noti_msg">Press to open text memo</string>
+
+    <string name="tv_memo_edittext_hint">Type memo...</string>
+    <string name="tv_memo_btn_save">Save &amp; Close</string>
+    <string name="tv_memo_btn_menu">menu</string>
+
+    <string name="tv_menu_clear">Clear all</string>
+    <string name="tv_menu_share">Share</string>
+    <string name="tv_menu_launchapp">Launch app</string>
+    <string name="tv_menu_closemenu">Close menu</string>
+
+    <string name="tv_cleardialog_msg">Are you sure you want to clear?</string>
+    <string name="tv_cleardialog_btn_clear">clear</string>
+    <string name="tv_cleardialog_btn_cancel">cancel</string>
+
+    <string name="tv_toast_quickmemo">You can use quick memo when you pull down status bar</string>
+
+</resources>
